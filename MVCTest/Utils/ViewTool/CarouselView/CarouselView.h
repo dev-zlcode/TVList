@@ -2,8 +2,8 @@
 //  CarouselView.h
 //  xxx
 //
-//  Created by 乐业天空 on 15/7/14.
-//  Copyright (c) 2015年 myjobsky. All rights reserved.
+//  Created by 张雷 on 15/7/14.
+//  Copyright (c) 2015年 zhanglei. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

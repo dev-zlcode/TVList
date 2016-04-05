@@ -2,8 +2,8 @@
 //  Tools.m
 //  MVCTest
 //
-//  Created by 乐业天空 on 15/6/30.
-//  Copyright (c) 2015年 myjobsky. All rights reserved.
+//  Created by 张雷 on 15/6/30.
+//  Copyright (c) 2015年 zhanglei. All rights reserved.
 //
 
 #import "Tools.h"
@@ -176,7 +176,7 @@
 
 //----------------------------------------------------------------------------------------
 // DES密钥
-NSString *key = @"myjobsky";
+NSString *key = @"zhanglei";
 // DES初始化量
 Byte iv[] = {0x12, 0x34, 0x56, 120, 0x90, 0xab, 0xcd, 0xef};
 

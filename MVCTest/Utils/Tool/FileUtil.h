@@ -2,8 +2,8 @@
 //  FileUtil.h
 //  MVCTest
 //
-//  Created by 乐业天空 on 15/6/30.
-//  Copyright (c) 2015年 myjobsky. All rights reserved.
+//  Created by 张雷 on 15/6/30.
+//  Copyright (c) 2015年 zhanglei. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

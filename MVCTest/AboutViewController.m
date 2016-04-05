@@ -2,8 +2,8 @@
 //  AboutViewController.m
 //  MVCTest
 //
-//  Created by 乐业天空 on 15/11/9.
-//  Copyright (c) 2015年 myjobsky. All rights reserved.
+//  Created by 张雷 on 15/11/9.
+//  Copyright (c) 2015年 zhanglei. All rights reserved.
 //
 
 #import "AboutViewController.h"
@@ -50,7 +50,7 @@
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
-    if ([request.URL.host isEqualToString:@"www.myjobsky.com"])
+    if ([request.URL.host isEqualToString:@"www.zlcode.com"])
     {
         [[UIApplication sharedApplication] openURL:request.URL];
         

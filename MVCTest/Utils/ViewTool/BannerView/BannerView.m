@@ -2,8 +2,8 @@
 //  BannerView.m
 //  Test
 //
-//  Created by 乐业天空 on 15/11/20.
-//  Copyright © 2015年 myjobsky. All rights reserved.
+//  Created by 张雷 on 15/11/20.
+//  Copyright © 2015年 zhanlgei. All rights reserved.
 //
 
 #import "BannerView.h"

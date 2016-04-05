@@ -2,8 +2,8 @@
 //  SearchDetailViewController.h
 //  MVCTest
 //
-//  Created by 乐业天空 on 16/1/23.
-//  Copyright © 2016年 myjobsky. All rights reserved.
+//  Created by 张雷 on 16/1/23.
+//  Copyright © 2016年 zhanglei. All rights reserved.
 //
 
 #import "BaseViewController.h"
