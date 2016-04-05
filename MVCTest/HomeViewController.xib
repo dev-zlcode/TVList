@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="scrollView" destination="mRV-5d-WaG" id="wVP-Na-gMD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRV-5d-WaG">
+                    <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                    <animations/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="X3h-18-L5j"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="mRV-5d-WaG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9XX-3y-phj"/>
+                <constraint firstAttribute="bottom" secondItem="mRV-5d-WaG" secondAttribute="bottom" id="CNQ-Qi-fPk"/>
+                <constraint firstItem="mRV-5d-WaG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="iBq-if-0sd"/>
+                <constraint firstAttribute="trailing" secondItem="mRV-5d-WaG" secondAttribute="trailing" id="wJF-BT-gCD"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="325" y="231"/>
+        </view>
+    </objects>
+</document>

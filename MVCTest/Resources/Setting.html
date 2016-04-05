@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>电视节目单</title>
+
+    <style type="text/css">
+        body{font-size:14px;line-height:1.5em;background:RGB(235,235,241);}
+        p{text-indent: 2em;}
+        img{
+            border-radius: 10px;
+        }
+        div#part1{
+            padding-left: 20px;
+            padding-top: 200px;
+            padding-right: 20px;
+            padding-bottom: 5px;
+        }
+        div#part2{
+            padding-left: 30px;
+            padding-top: 60px;
+            padding-right: 30px;
+            padding-bottom: 15px;
+        }
+        div#part3{
+            padding-left: 0px;
+            padding-top: 20px;
+            padding-right: 0px;
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+    </style>
+
+
+    <script>
+        // 设置版本号
+        function setVersion(string)
+        {
+            document.getElementById("version").innerHTML=string;
+        }
+    </script>
+
+</head>
+
+<body >
+
+<div id="part1" align="center">
+    <img src="Setting_icon.png" width="80" height="80">
+    <div id="version">
+        <!-- 版本号通过客户端调用js动态更改 -->
+        版本号:1.0.0
+    </div>
+    <div style="color:#2a93d1;font-size:16px;text-align:center; margin-top:60px;"></div>
+</div>
+
+</body>
+
+</html>
+

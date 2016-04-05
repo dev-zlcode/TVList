@@ -1,0 +1,54 @@
+//
+//  PrefixHeader.pch
+//  MVCTest
+//
+//  Created by 乐业天空 on 15/6/30.
+//  Copyright (c) 2015年 myjobsky. All rights reserved.
+//
+
+#ifndef MVCTest_PrefixHeader_pch
+#define MVCTest_PrefixHeader_pch
+
+/**
+ * 系统库和头文件
+ */
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+/**
+ * 自定义头文件
+ */
+
+//配置头文件
+#import "Configuration.h"
+#import "ConstantDef.h"
+#import "Constant.h"
+
+//库头文件
+#import "AFNetworking.h"
+#import "FMDB.h"
+#import "DateTools.h"
+#import "MJRefresh.h"
+#import "MBProgressHUD.h"
+#import "RegexKitLite.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "GTMBase64.h"
+#import "KeyboardManager.h"
+#import "OpenUDID.h"
+#import "YYModel.h"
+#import "UIScrollView+EmptyDataSet.h"
+//#import "Cutter.h"
+#import "XMLDictionary.h"
+#import "HTMLNode.h"
+#import "HTMLParser.h"
+#import "RMPickerViewController.h"
+#import "RMDateSelectionViewController.h"
+#import "iCarousel.h"
+
+//头文件
+#import "AppDelegate.h"
+#import "HttpManager.h"
+#import "MyObject.h"
+
+#endif

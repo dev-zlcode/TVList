@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MethodDetailViewController">
+            <connections>
+                <outlet property="menuDayButton" destination="aOQ-hf-BuK" id="ygH-ft-AYf"/>
+                <outlet property="nextDayButton" destination="tIe-kA-dWW" id="4sp-wp-VNk"/>
+                <outlet property="previousDayButton" destination="zPP-NU-7w3" id="BRv-Xm-MqZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="0AW-Xy-TDS" id="trC-7o-b2O"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ndi-PT-bGq">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPP-NU-7w3">
+                            <rect key="frame" x="30" y="8" width="45" height="29"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="6uV-Te-n0g"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="前一天"/>
+                            <connections>
+                                <action selector="previousDayBtn:" destination="-1" eventType="touchUpInside" id="1IQ-9I-kT4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOQ-hf-BuK">
+                            <rect key="frame" x="80" y="8" width="160" height="29"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="2016-01-22(周五)"/>
+                            <connections>
+                                <action selector="menuDayBtn:" destination="-1" eventType="touchUpInside" id="ZPJ-Ro-rpK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIe-kA-dWW">
+                            <rect key="frame" x="245" y="8" width="45" height="29"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="7yk-q1-hZl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="后一天"/>
+                            <connections>
+                                <action selector="nextDayBtn:" destination="-1" eventType="touchUpInside" id="QJb-DI-8id"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="tIe-kA-dWW" secondAttribute="trailing" constant="30" id="9AW-2Z-YBY"/>
+                        <constraint firstItem="tIe-kA-dWW" firstAttribute="centerY" secondItem="Ndi-PT-bGq" secondAttribute="centerY" id="LnV-7S-Pmg"/>
+                        <constraint firstItem="aOQ-hf-BuK" firstAttribute="leading" secondItem="zPP-NU-7w3" secondAttribute="trailing" constant="5" id="Px5-uW-Vxa"/>
+                        <constraint firstItem="aOQ-hf-BuK" firstAttribute="centerY" secondItem="Ndi-PT-bGq" secondAttribute="centerY" id="TNa-BN-Cib"/>
+                        <constraint firstItem="tIe-kA-dWW" firstAttribute="leading" secondItem="aOQ-hf-BuK" secondAttribute="trailing" constant="5" id="ezN-6q-yiS"/>
+                        <constraint firstAttribute="height" constant="44" id="h5o-dT-ftA"/>
+                        <constraint firstItem="zPP-NU-7w3" firstAttribute="centerY" secondItem="Ndi-PT-bGq" secondAttribute="centerY" id="jKD-oL-txd"/>
+                        <constraint firstItem="zPP-NU-7w3" firstAttribute="leading" secondItem="Ndi-PT-bGq" secondAttribute="leading" constant="30" id="u5U-HC-tTa"/>
+                    </constraints>
+                </view>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0AW-Xy-TDS">
+                    <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </webView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="0AW-Xy-TDS" firstAttribute="top" secondItem="Ndi-PT-bGq" secondAttribute="bottom" id="9RU-7p-CDS"/>
+                <constraint firstAttribute="trailing" secondItem="Ndi-PT-bGq" secondAttribute="trailing" id="aZx-NG-iVk"/>
+                <constraint firstItem="0AW-Xy-TDS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="e77-Zi-efF"/>
+                <constraint firstAttribute="trailing" secondItem="0AW-Xy-TDS" secondAttribute="trailing" id="eQH-O1-Epf"/>
+                <constraint firstItem="Ndi-PT-bGq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fqk-EV-52w"/>
+                <constraint firstItem="Ndi-PT-bGq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kHl-VK-Bw7"/>
+                <constraint firstAttribute="bottom" secondItem="0AW-Xy-TDS" secondAttribute="bottom" id="xRS-nM-Lav"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="35" y="269"/>
+        </view>
+    </objects>
+</document>
